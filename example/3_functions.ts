@@ -18,6 +18,7 @@ function add(a: number, b: number): number {
 // }
 
 // 함수 인자
+// 인자값을 정해진 것보다 더 추가했을 경우 오류
 function log(a: string) {
   console.log(a);
 }
