@@ -39,3 +39,20 @@ interface Developer extends Person {
   language: string;
 }
 const joo: Developer = { name: 'joo', age: 20, language: 'ts' };
+
+
+//딕셔너리 패턴
+interface StringRegexDictionary {
+  [key: string]: RegExp
+}
+
+var obj: StringRegexDictionary = {
+//  sth: /abc/,
+  cssFile: /\.css$/,
+  jsFile: /\.js$/,
+}
+
+Object.keys(obj).forEach(function(value){
+});
+
+obj['cssFile'] = 'a' //정규표현식이 아니라 string이므로 에러 발생
